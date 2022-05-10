@@ -2,6 +2,12 @@
 
 usage() { echo "Usage: $0 [-p profile] [-t tagname] [-r region]" 1>&2; exit 0; }
 
+if [ $# -eq 0 ]
+then
+    usage
+    exit 0
+fi
+
 while getopts ":ht:p:r:" o; do
     case "${o}" in
         r)

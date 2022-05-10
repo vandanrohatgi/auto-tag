@@ -4,7 +4,7 @@ When you create multiple EC2 instances from the same AMI on AWS you get the opti
 
 ![](https://i.imgur.com/qSSxpl0.png)
 
-On AWS however there is no feature like this. So here is a simple script that takes the name of the current EC2 instances and renames them just like digital ocean. 
+On AWS however there is no feature like this. So here is a simple bash script that takes the name of the current EC2 instances and renames them just like digital ocean. 
 
 ![](https://i.imgur.com/4OtwTOy.png)
 
@@ -12,6 +12,7 @@ On AWS however there is no feature like this. So here is a simple script that ta
 ./tag.sh -t server
 
 ./tag.sh -h
+Usage: ./tag.sh [-p profile] [-t tagname] [-r region]
 
 ./tag.sh -p nondefault -r us-east-1 -t server
 ```
